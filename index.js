@@ -29,7 +29,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/auth", authRoutes);
 app.use("/api/tweets", tweetRoutes);
 
-app.listen(8000, () => {
+app.listen(PORT, () => {
   connect();
   console.log("Listening to port 8000");
 });
