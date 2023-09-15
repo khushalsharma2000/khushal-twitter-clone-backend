@@ -10,7 +10,7 @@ import tweetRoutes from "./routes/tweets.js";
  const PORT = process.env.PORT || 8000;
 
 const app = express();
-app.use(cors({origin: '*'}));
+app.use(cors({origin: `${process.env.FRONTEND_URL}`,credentials: true}));
 dotenv.config();
 
 const connect = () => {
