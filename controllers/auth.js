@@ -16,7 +16,7 @@ export const signup = async (req, res, next) => {
     const { password, ...othersData } = newUser._doc;
     res
       .cookie("access_token", token, {
-        httpOnly: true,
+        httpsOnly: true,
       })
       .status(200)
       .json(othersData);
