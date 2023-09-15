@@ -6,7 +6,7 @@ import cookieParser from "cookie-parser";
 import userRoutes from "./routes/users.js";
 import authRoutes from "./routes/auths.js";
 import tweetRoutes from "./routes/tweets.js";
-const PORT = process.env.PORT || 8000;
+ const PORT = process.env.PORT || 8000;
 
 const app = express();
 dotenv.config();
