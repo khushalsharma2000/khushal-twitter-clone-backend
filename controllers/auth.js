@@ -17,6 +17,8 @@ export const signup = async (req, res, next) => {
     res
       .cookie("access_token", token, {
         httpOnly: true,
+        sameSite: "None", // Set SameSite to None
+        secure: false,
       })
       .status(200)
       .json(othersData);
